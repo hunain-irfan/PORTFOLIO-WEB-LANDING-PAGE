@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: var(--primary-color);
+
+}
+
+:root{
+    --primary-color : #fff;
+    --secondary-color: #212121;
+}
+
+.dark-theme{
+    --primary-color : #000106;
+    --secondary-color: #fff;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    /* auto: This sets the left and right margins to "auto." When the margin is set to "auto" on the left and right sides, it means that the browser will automatically distribute the available space equally between them. This has the effect of centering the element horizontally within its containing parent. */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+#icon {
+    width: 24px;
+    cursor: pointer;
+}
+
+.nav-logo img {
+    height: 33px; 
+    color: var(--secondary-color);
+}
+
+ ul {
+    list-style: none;
+    display: flex;
+}
+
+ li {
+    margin-right: 20px; 
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+li:hover{
+    color: #31b3ff;
+}
+
+h1{
+    color:var(--secondary-color) ;
+    font-size: 70px;
+
+}
+
+span{
+    color: #31b3ff;
+}
+
+p{
+    color:var(--secondary-color);
+    line-height: 22px;
+    margin: 40px 0;
+}
+
+.left a {
+    text-decoration: none;
+    color: #fff;
+    /* color:var(--primary-color); */
+    /* background-color: var(--secondary-color); */
+    padding: 10px 18px;
+    margin: 30px 0;
+    border-radius: 5px;
+    transition: 0.7s;
+    background-color: #31b3ff;
+}
+
+.left a:hover{
+    background-color: #145b83;
+}
+
+.other-part {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    margin-top: 34px;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 49%;
+    transition: bottom 1s , left 1s;
+}
+
+.back-img {
+    width: 100%;
+    height: 100%;
+}
+
+.main-img {
+    position: absolute;
+    width: 370px; 
+    height: 556px;
+   
+}
+
+.social-links{
+    margin-top: 135px;
+}
+
+.social-links i{
+    font-size: 24px;
+    padding: 10px 7px;
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+
+.social-links i:hover{
+    color: #31b3ff;
+}
+
+
